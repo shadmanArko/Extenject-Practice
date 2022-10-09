@@ -2,7 +2,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 using FSM.GameManager.States;
- 
+using TMPro;
+
 namespace FSM.GameManager
 {
     public class GameManager : MonoBehaviour
@@ -16,7 +17,7 @@ namespace FSM.GameManager
         [SerializeField]
         private GameState _previousGameState;
  
-        public Text stateText;
+        public TMP_Text stateText;
  
         [Inject]
         public void Construct(GameStateFactory gameStateFactory)
